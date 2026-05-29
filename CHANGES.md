@@ -6,6 +6,10 @@ Unreleased
   Colorama is no longer a dependency and is not used. {issue}`2986` {pr}`3505`
 - {class}`Argument` accepts a `help` parameter, and help output includes
   a `Positional arguments` section when argument help is available. {issue}`2983` {pr}`3473`
+- Add {func}`custom_version_option`, a `--version` option whose output is
+  produced by a callback, covering cases {func}`version_option` intentionally
+  does not. The feature set of {func}`version_option` is now frozen; see
+  [discussion #3527](https://github.com/pallets/click/discussions/3527). {pr}`3581`
 
 ## Version 8.4.2
 
