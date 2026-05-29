@@ -14,6 +14,10 @@ Unreleased
 -   A :class:`Group` with ``invoke_without_command=True`` marks its subcommand as
     optional in the usage help, showing ``[COMMAND]`` instead of ``COMMAND``.
     :issue:`3059` :pr:`3507`
+-   ``echo_via_pager`` and ``get_pager_file`` no longer close a borrowed stdout
+    stream when no external pager runs, completing the partial
+    ``I/O operation on closed file`` fix from :pr:`3482`. :issue:`3449`
+    :pr:`3533`
 
 
 Version 8.4.1
